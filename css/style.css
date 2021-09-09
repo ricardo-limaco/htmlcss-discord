@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 920px;
+    width: 100%;
+    margin: auto;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+}
+/**************************************************************/
+/****** Hero Section ******/
+header {
+    height: 100vh;
+}
+
+.hero-img {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.center-container {
+    margin: 0 auto;
+    position: relative;
+    height: calc(100vh - 66px);
+}
+
+
+.center-container .col-4_6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+
+header .center-container p{
+    padding-bottom: 20px;
+}
+
+header .center-container .col-4_6 a {
+    margin: 0 10px;
+}
+
+
+/****** Nav ******/
+nav {
+    padding-top: 25px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 0% 15px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav .col-4_6 {
+    line-height: 39px;
+}
+
+
+/****** Main ******/
+main .container .row {
+    padding: 160px 0 200px;
+}
+
+.grey {
+    background-color: #F6F6F6;
+}
+
+/****** img + text ******/
+.img-center {
+    width: 100%;
+    position: relative;
+    top: -27px;
+}
+
+main .row .col-2_6 p {
+    padding-top: 20px; 
+}
+
+
+
+
+
+
+/****** Row & Columns ******/
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.row > * {
+    float: left;
+}
+  
+.row > .float-right {
+    float: right;
+}
+
+
+.col-1_6 {
+    width: calc(100% / 6)
+}
+
+.col-2_6 {
+    width: calc(100% / 6 * 2)
+}
+
+.col-4_6 {
+    width: calc(100% / 6 * 4)
+}
+
+
+
+
+/****** Text ******/
+
+.text-list {
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h2 {
+    color: #23272A;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+.black {
+    color: #23272A;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/****** Button *******/
+
+.bt {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 18px 28px;
+    border-radius: 30px;
+}
+
+.bt-small {
+    font-size: 13px;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.bt-white {
+    color: #23272A;
+    background-color: white;
+}
+
+.bt-black {
+    color: white;
+    background-color: #23272A;
+}
+
+.bt-blue {
+    color: white;
+    background-color: #8EA1E1;
+}
+
