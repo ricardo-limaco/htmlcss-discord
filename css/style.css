@@ -69,6 +69,9 @@ a {
     text-decoration: none;
     display: inline-block;
 }
+li a:hover {
+    text-decoration: underline;
+}
 
 nav .col-4_6 {
     line-height: 39px;
@@ -205,12 +208,12 @@ h3 {
 }
 
 /****** Button *******/
-
 .bt {
     font-size: 17px;
     font-weight: 600;
     padding: 18px 28px;
     border-radius: 30px;
+    transition: 0.2s;
 }
 
 .bt-small {
@@ -218,27 +221,44 @@ h3 {
     padding: 10px 16px;
     border-radius: 25px;
     font-weight: 500;
+    transition: 0.2s;
 }
 
 .bt-white {
     color: #23272A;
     background-color: white;
 }
+.bt-white:hover {
+    color: #5865f2;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 
 .bt-black {
     color: white;
     background-color: #23272A;
 }
+.bt-black:hover {
+    background-color: #36393f;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
 
 .bt-blue {
     color: white;
     background-color: #8EA1E1;
 }
+.bt-blue:hover {
+    background-color: #7983f5;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 
+/* ombra per tutti
+blue diventao solo più chiari #7983f5
+bianco, testo blue chiaro #5865f2
+nero + chiaro #36393f */
 
 
 /* Footer */
-
 .dark {
     background-color: #23272A;
 }
@@ -265,12 +285,6 @@ footer li {
 }
 
 
-.social {
-    color: white;
-    align-items: 20px;
-    font-size: 20px;
-}
-
 .ita img {
     height: 16px;
     background-size: cover;
@@ -288,6 +302,9 @@ footer li {
     top: -2px;
 }
 
-div.social i{
+div.social a{
     padding: 18px 22px 0 0;
+    color: white;
+    align-items: 20px;
+    font-size: 20px;
 }
